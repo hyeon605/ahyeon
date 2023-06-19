@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+.memberJoin_main{
+	display:flex;
+	flex-direction:column;
+	width: 80%;
+    margin: 0 auto;
+}
+#memberJoin_menu{
+	display:flex;
+	flex-direction:row;
+}
+#memberJoin_menu .backBtn{
+	border:none;
+	width:5vw;
+	height:5vh;
+	margin-right:10vw;
+	background-color:#eee;
+	font-size:1.2rem;
+	font-weight:bold;
+	opacity:0.5;
+}
+#memberJoin_menu .backBtn:hover{
+	opacity:1;
+	cursor:pointer;
+}
+#memberJoin_menu .logo{
+	font-size:3.5rem;
+	text-align: center;
+    width: 50vw;
+}
+#memberJoin_menu .logo:hover{
+	cursor:pointer;
+}
+#memberSelect{
+	display:flex;
+	flex-direction: row;
+	margin:0 auto;
+	position:relative;
+}
+#memberSelect .selectMentee,.selectMento{
+	width:21vw;
+	height:20vh;
+	margin:5vw;
+}
+#memberSelect .memberList{
+	font-size:1.2rem;
+	font-weight:bold;
+}
+#memberSelect .menteeJoinBtn{
+	display:inline-block;
+	width:21vw;
+	height:8vh;
+	font-size:1.3rem;
+	font-weight:bold;
+	text-decoration: none;
+	color:black;
+	background-color:#ddd;
+	position:absolute;
+	top:25vh;
+	left:5vw;
+	text-align:center;
+	padding-top:4vh;
+	margin-top: 3vh;
+}
+#memberSelect .mentoJoinBtn{
+	display:inline-block;
+	width:21vw;
+	height:8vh;
+	font-size:1.3rem;
+	font-weight:bold;
+	text-decoration: none;
+	color:black;
+	background-color:#ddd;
+	position:absolute;
+	top:25vh;
+	left:46vw;
+	text-align:center;
+	padding-top:4vh;
+	margin-top: 3vh;
+}
+#memberJoinLine{
+	width:0.1vw;
+	height:36vh;
+	background-color:#aaa;
+	margin:5vw;
+}

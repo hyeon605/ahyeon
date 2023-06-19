@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+.login_main{
+	display:flex;
+	flex-direction:column;
+	width: 80%;
+    margin: 0 auto;
+}
+#login_menu{
+	display:flex;
+	flex-direction:row;
+}
+#login_menu .backBtn{
+	border:none;
+	width:5vw;
+	height:5vh;
+	margin-right:10vw;
+	background-color:#eee;
+	font-size:1.2rem;
+	font-weight:bold;
+	opacity:0.5;
+}
+#login_menu .backBtn:hover{
+	opacity:1;
+	cursor:pointer;
+}
+#login_menu .logo{
+	font-size:3.5rem;
+	text-align: center;
+    width: 47.5vw;
+}
+#login_menu .logo:hover{
+	cursor:pointer;
+}
+.login_frm{
+	display:inline-block;
+	margin:0 auto;
+}
+.login_frm .mentotee{
+	margin-left: 7vw;
+}
+.login_frm span{
+	margin-top: 4vh;
+    margin-bottom: 1vh;
+    display: inline-block;
+    
+}
+.login_frm .login_id,.login_pw{
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom:1 solid #aaa;
+	width: 32vw;
+	height: 5vh;
+}
+.login_frm .login_id,.login_pw:focus{
+	outline: none;
+}
+.findIdPw{
+	width: 13vw;
+    margin-top: 3vh;
+    margin-bottom: 4vh;
+    margin-left: 46vw;
+    text-decoration: none;
+    font-size:0.9rem;
+}
+.loginBtn{
+	border:none;
+	width:32vw;
+	height:8vh;
+	margin:0 auto;
+	margin-bottom: 5vh;
+	font-size:1rem;
+}
+.loginBtn:hover{
+	cursor:pointer;
+	font-size:1.3rem;
+    left: 11vw;
+    top: -0.6vh;
+	
+}
+#loginLine{
+	display:flex;
+	flex-direction: row;
+	margin:0 auto;
+}
+.loginLine{
+	width: 13vw;
+    height: 0.15vh;
+    background-color: #aaa;
+    margin: 3.5vh;
+}
+.kakaoLoginBtn{
+	border:none;
+	width:32vw;
+	height:8vh;
+	margin:0 auto;
+	margin-bottom: 5vh;
+	display:flex;
+	flex-direction: row;
+	position:relative;
+	background-color:#ffeb00;
+}
+.kakaoLoginBtn:hover{
+	cursor:pointer;
+}
+.kakaoLoginBtn img{
+	width:2.5vw;
+	height:5vh;
+	position: absolute;
+    left: 2vw;
+    top: 1.4vh;
+}
+.kakaoLoginBtn p{
+	position: absolute;
+    left: 12vw;
+    top: 0.2vh;
+}
+.kakaoLoginBtn p:hover{
+    font-size:1.3rem;
+    left: 11vw;
+    top: -0.6vh;
+}
+#memberJoin{
+	display:flex;
+	flex-direction: row;
+	position:relative;
+	width: 32vw;
+	height: 10vh;
+	margin:0 auto;
+}
+#memberJoin a{
+	position:absolute;
+	text-decoration: none;
+	right: 0vw;
+	top: 2vh;
+}
+#memberJoin p{
+	position:absolute;
+	font-size:0.9rem;
+	right: 5vw;
+    top: 0.2vh;
+}

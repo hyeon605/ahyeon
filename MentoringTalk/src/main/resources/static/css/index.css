@@ -1,0 +1,388 @@
+@charset "UTF-8";
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+#index_main{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	
+}
+#index_section1{
+	padding-top:10vh;
+	padding-bottom:10vh;
+	display: grid;
+	grid-template-areas:
+		"index_btn index_logo index_etcButton"
+		". searchPlace .";
+	gap:3vh;
+}
+/*햄버거메뉴*/
+html.open {
+  overflow: hidden;
+}
+
+#index_menu.open {
+  left: 0px;
+}
+
+.page_cover.open {
+  display: block;
+}
+
+.index_btn {
+  width: 50px;
+  height: 50px;
+  left: 20px;
+  top: 10vh;
+  z-index: 1;
+  background-image: url("http://s1.daumcdn.net/cfs.tistory/custom/blog/204/2048858/skin/images/menu.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  grid-area: index_btn;
+  align-self: start;
+  justify-self: end;
+}
+
+.close {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-image: url("http://s1.daumcdn.net/cfs.tistory/custom/blog/204/2048858/skin/images/close.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+#index_menu {   
+  width: 350px;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: -350px;
+  z-index: 10;
+  border: 1px solid #c9c9c9;
+  background-color: white;
+  text-align: center;
+  font-weight: bold;
+  transition: All 0.2s ease;
+  -webkit-transition: All 0.2s ease;
+  -moz-transition: All 0.2s ease;
+  -o-transition: All 0.2s ease;
+  padding-top: 25vh;
+  padding-left: 0px;
+}
+
+#index_menu a{
+ padding:0;
+ text-decoration: none;
+ font-size: 18px;
+ color: #25a4cd;
+ display: block;
+ transition: 0.3s;
+ }
+
+#index_menu.open {
+  left: 0px;
+}
+
+.page_cover.open {
+  display: block;
+}
+
+.page_cover {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 4;
+  display: none;
+}
+#index_menu p{
+	font-size: 3rem;
+	padding-bottom: 2vh;
+	text-align: center;
+}
+#index_menu ul { 
+    width:300px; 
+    margin:0; 
+    padding:0;
+    }
+    
+#index_menu ul.index_hamburger li {
+    position:relative; 
+    float:left; 
+    width:100%; 
+    list-style-type:none; 
+    font-size:18px;
+    }
+    
+#index_menu ul.index_hamburger li a {
+    display:block; 
+    width:100%; 
+    height:100%; 
+    line-height:50px; 
+    text-indent:20px;
+    text-align: center;
+    color:#25a4cd; 
+    font-weight:bold; 
+    text-decoration:none;
+    opacity: 0.5;
+    }
+    
+#index_menu ul.index_hamburger li a:hover {
+	opacity:1;
+    }
+    
+#index_menu ul.index_hamburger li .sub_mobile a {
+    position:relative;
+    float:left;
+    display:block;
+    width:100%;
+    z-index:999;
+    background:#ccc;
+	}
+
+#index_menu ul.index_hamburger li .sub_mobile a:hover {
+    background:#787878;
+    color:#fff;
+    z-index:999;
+    }
+/*햄버거메뉴 end*/
+.index_logo{
+	grid-area: index_logo;
+	align-self: center;
+	justify-self: center;
+	font-size: 5rem;
+	width:48vw;
+	display:grid;
+}
+.index_logo p{
+	justify-self: center;
+}
+.index_logo p:hover{
+	cursor:pointer;
+}
+.index_etcButton{
+	grid-area: index_etcButton;
+	align-self: center;
+	justify-self: center;
+}
+.index_etcButton ul{
+	width:13vw;
+}
+.index_etcButton ul.index_nav li {
+    position:relative; 
+    float:left; 
+    list-style-type:none; 
+    font-size:1.2rem;
+    }
+    
+.index_etcButton ul.index_nav li a {
+    display:inline-block; 
+    width:100%; 
+    height:100%; 
+    line-height:50px; 
+    text-indent:20px;
+    text-align: center;
+    color:#25a4cd; 
+    font-weight:bold; 
+    text-decoration:none;
+    opacity: 0.5;
+    }
+    
+.index_etcButton ul.index_nav li a:hover {
+	opacity:1;
+    }
+#searchPlace{
+	grid-area: searchPlace;
+	align-self: center;
+	justify-self: end;
+	font-size: 2rem;
+}
+#searchPlace .searchPlace{
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom:1 solid #ccc;
+	width: 40vw;
+}
+#searchPlace .searchPlace:focus{
+	outline: none;
+}
+#searchPlace .index_btn_image{
+	width: 3vw;
+	height: 5vh;
+	border: none;
+	background-color: white;
+}
+#searchPlace img{
+	width: 4vw;
+	height: 5vh;
+	opacity: 0.5;
+}
+#searchPlace img:hover{
+	opacity: 1;
+}
+/*section2 슬라이드이미지*/
+#index_section2{
+	width:65vw;
+	height:55vh;	
+}
+#index_section2 .carousel-inner{
+	width:100%;
+	height:100%;
+}
+#index_section2 .carousel-inner img{
+	width:75vw;
+	height:55vh;
+}
+/*section3*/
+#index_section3{
+	padding-top:15vh;
+}
+#index_section3>p{
+	font-size:2.3rem;
+	font-weight:bold;
+}
+#area_menu div{
+	width:150px;
+	height:150px;
+	margin:10px auto;
+	border:none;
+	position:relative;
+	display:inline-block;
+	border-radius:100px;
+	background-color:#eee;
+}
+#area_menu div:hover{
+	background-color:#fff;
+	cursor:pointer;
+}
+#area_menu img{
+	width:80%;
+	height:80%;
+	opacity:0.2;
+	position:absolute;
+	left: 1vw;
+    top: 2vh;
+}
+#area_menu img:hover{
+	opacity:1;
+}
+#area_menu p{
+	position:absolute;
+	top:45%;
+	font-weight:bold;
+}
+#area_menu #menu_IT_text p{
+	left:45%;
+}
+#area_menu #menu_samu_text p{
+	left:32%;
+}
+#area_menu #menu_create_text p{
+	left:30%;
+}
+#area_menu #menu_art_text p{
+	left:40%;
+}
+#area_menu #menu_etc_text p{
+	left:40%;
+}
+#area_menu #menu_all_text p{
+	left:23%;
+}
+/* section4 */
+#index_section4{
+	padding-top:15vh;
+	padding-bottom:15vh;
+}
+#index_section4>p{
+	font-size:2.3rem;
+	font-weight:bold;
+}
+#situation_menu{
+	height:auto;
+}
+#situation_menu div{
+	width:300px;
+	height:400px;
+	margin:10px auto;
+	border:none;
+	position:relative;
+	display:inline-block;
+	border-radius:100px;
+}
+#situation_menu div:hover{
+	background-color:#fff;
+	cursor:pointer;
+}
+#situation_menu img{
+	width:95%;
+	height:95%;
+	opacity:0.2;
+	position:absolute;
+	left: 1vw;
+    top: 2vh;
+    border-radius:100px;
+}
+#situation_menu img:hover{
+	opacity:1;
+}
+#situation_menu p{
+	position:absolute;
+	top:45%;
+	font-weight:bold;
+	font-size:2rem;
+}
+#situation_menu #menu_online_text p{
+	left:34%;
+}
+#situation_menu #menu_phone_text p{
+	left:40%;
+}
+#situation_menu #menu_zoom_text p{
+	left:40%;
+}
+#situation_menu .advice_text{
+	position: absolute;
+    top: 102%;
+    left: 3%;
+    font-size:1.2rem;
+}
+#situation_menu output:not(.advice_text){
+	position: absolute;
+    top: 113%;
+    left: 3%;
+    font-size:1.3rem;
+    font-weight:bold;
+    opacity:0.7;
+}
+#situation_menu output:not(.advice_text):hover{
+	position: absolute;
+    top: 113%;
+    left: 3%;
+    font-size:1.3rem;
+    font-weight:bold;
+    opacity:1;
+}
+/*footer*/
+footer{
+	width:80%;
+	text-align:center;
+}
+hr{
+	align-items: center;
+	border:2px solid #aaa;
+	width:90%;
+}

@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+
+.menteeJoin_main{
+	display:flex;
+	flex-direction:column;
+	width: 80%;
+    margin: 0 auto;
+    position:relative;
+}
+#menteeJoin_menu{
+	display:flex;
+	flex-direction:row;
+}
+#menteeJoin_menu .backBtn{
+	border:none;
+	width:5vw;
+	height:5vh;
+	margin-right:10vw;
+	background-color:#eee;
+	font-size:1.2rem;
+	font-weight:bold;
+	opacity:0.5;
+}
+#menteeJoin_menu .backBtn:hover{
+	opacity:1;
+	cursor:pointer;
+}
+#menteeJoin_menu .logo{
+	font-size:3.5rem;
+	text-align: center;
+    width: 47.5vw;
+}
+#menteeJoin_menu .logo:hover{
+	cursor:pointer;
+}
+.menteeJoin_frm{
+	display:inline-block;
+	margin:0 auto;
+}
+.menteeJoin_frm span{
+	margin-top: 4vh;
+    margin-bottom: 1vh;
+    display: inline-block;  
+}
+.menteeJoin_frm input[type='text'],input[type='password']{
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom:1 solid #aaa;
+	width: 32vw;
+	height: 5vh;
+}
+.menteeJoin_frm input[type='text'],input[type='password']:focus{
+	outline: none;
+}
+.menteeJoin_frm .mentee_idCheck{
+	border:none;
+	width:7vw;
+	height:4vh;
+}
+.menteeJoin_frm .mentee_idCheck:hover{
+	cursor:pointer;
+}
+.menteeJoinBtn{
+	border:none;
+	width:32vw;
+	height:8vh;
+	margin-top: 98vh;
+    margin-left: 19.5vw;
+	font-size:1rem;
+	position:absolute;
+}
+.menteeJoinBtn:hover{
+	cursor:pointer;
+	font-size:1.3rem;
+}

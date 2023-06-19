@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+.memberFind_main{
+	display:flex;
+	flex-direction:column;
+	width: 80%;
+    margin: 0 auto;
+}
+#memberFind_menu{
+	display:flex;
+	flex-direction:row;
+}
+#memberFind_menu .backBtn{
+	border:none;
+	width:5vw;
+	height:5vh;
+	margin-right:10vw;
+	background-color:#eee;
+	font-size:1.2rem;
+	font-weight:bold;
+	opacity:0.5;
+}
+#memberFind_menu .backBtn:hover{
+	opacity:1;
+	cursor:pointer;
+}
+#memberFind_menu .logo{
+	font-size:3.5rem;
+	text-align: center;
+    width: 50vw;
+}
+#memberFind_menu .logo:hover{
+	cursor:pointer;
+}
+#memberFind{
+	display:flex;
+	flex-direction: row;
+	margin:0 auto;
+	position:relative;
+}
+#memberFind p:not(.memberList){
+	font-size:0.9rem;
+}
+#memberFind .memberIdFind{
+	width:21vw;
+	height:20vh;
+	margin:5vw;
+	margin-top:12vh;
+}
+#memberFind .memberPwFind{
+	width:21vw;
+	height:20vh;
+	margin:5vw;
+}
+#memberFind .memberList{
+	font-size:1.2rem;
+	font-weight:bold;
+}
+#memberFind .memberIdFindBtn{
+	display:inline-block;
+	width:21vw;
+	height:8vh;
+	font-size:1.3rem;
+	font-weight:bold;
+	text-decoration: none;
+	color:black;
+	background-color:#ddd;
+	position:absolute;
+	top:25vh;
+	left:5vw;
+	text-align:center;
+	padding-top:4vh;
+	margin-top: 25vh;
+}
+#memberFind .memberPwFindBtn{
+	display:inline-block;
+	width:21vw;
+	height:8vh;
+	font-size:1.3rem;
+	font-weight:bold;
+	text-decoration: none;
+	color:black;
+	background-color:#ddd;
+	position:absolute;
+	top:25vh;
+	left:46vw;
+	text-align:center;
+	padding-top:4vh;
+	margin-top: 25vh;
+}
+#memberFindLine{
+	width:0.1vw;
+	height:57vh;
+	background-color:#aaa;
+	margin:5vw;
+}
+form input[type='text']{
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom:1 solid #aaa;
+	width: 21vw;
+	height: 6vh;
+}
+form input[type='text']:focus{
+	outline: none;
+}
