@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="../css/findArea.css"/>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script defer src='../js/findArea.js'></script>
+<!-- 햄버거메뉴 부트스트랩 사용 -->
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -62,6 +63,7 @@
 						<a href='#'>웹개발</a>
 						<a href='#'>앱개발</a>
 						<a href='#'>데이터분석</a>
+						<a href='#'>전체보기</a>
 					</div>
 				</div>
 				<div id='findSamu'>
@@ -71,6 +73,7 @@
 						<a href='#'>법률사무</a>
 						<a href='#'>전산회계</a>
 						<a href='#'>비서</a>
+						<a href='#'>전체보기</a>
 					</div>
 				</div>
 				<div id='findService'>
@@ -80,6 +83,7 @@
 						<a href='#'>배달</a>
 						<a href='#'>미용</a>
 						<a href='#'>매장관리</a>
+						<a href='#'>전체보기</a>
 					</div>
 				</div>
 				<div id='findArt'>
@@ -89,6 +93,7 @@
 						<a href='#'>작곡</a>
 						<a href='#'>미술</a>
 						<a href='#'>성우</a>
+						<a href='#'>전체보기</a>
 					</div>
 				</div>
 				<div id='findEtc'>
@@ -98,6 +103,7 @@
 						<a href='#'>금융</a>
 						<a href='#'>연구</a>
 						<a href='#'>복지</a>
+						<a href='#'>전체보기</a>
 					</div>
 				</div>
 			</div>

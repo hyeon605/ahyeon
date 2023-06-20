@@ -23,3 +23,11 @@ $(document).ready(function(){
 		$("ul",this).slideToggle("fast");
 	})
 })
+/* 로그인페이지 연결 */
+function goLoginPage() {
+	location.href="/member/login";
+}
+/* 분야전체보기:페이지 연결 */
+function goFindAreaPage(){
+	location.href="/mentee/findArea";
+}

@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="css/index.css"/>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script defer src='js/index.js'></script>
+<!-- 햄버거메뉴 부트스트랩 사용 -->
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>

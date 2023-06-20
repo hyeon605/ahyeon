@@ -15,10 +15,10 @@
 	width:5vw;
 	height:5vh;
 	margin-right:10vw;
-	background-color:#eee;
 	font-size:1.2rem;
 	font-weight:bold;
 	opacity:0.5;
+	background-color:white;
 }
 #login_menu .backBtn:hover{
 	opacity:1;

@@ -1,352 +1,385 @@
 @charset "UTF-8";
 
 * {
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-#findArea_main{
-	display:flex;
-	flex-direction:column;
-	align-items:center;
-	
+
+#findArea_main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-#findArea_section1{
+
+#findArea_section1 {
 	position: fixed;
-	z-index:999;
-	padding-top:10vh;
-	padding-bottom:10vh;
+	z-index: 999;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
 	display: grid;
-	grid-template-areas:
+	grid-template-columns: 0.2fr 3fr 1.7fr;
+	grid-template-areas: 
 		"findArea_btn findArea_logo findArea_etcButton"
-		". searchPlace .";
-	gap:3vh;
-	background-color:white;
+		"searchPlace searchPlace searchPlace";
+	gap: 3vh;
+	background-color: white;
 }
 /*햄버거메뉴*/
 html.open {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 #findArea_menu.open {
-  left: 0px;
+	left: 0px;
 }
 
 .page_cover.open {
-  display: block;
+	display: block;
 }
 
 .findArea_btn {
-  width: 50px;
-  height: 50px;
-  left: 20px;
-  top: 10vh;
-  z-index:1;
-  background-image: url("http://s1.daumcdn.net/cfs.tistory/custom/blog/204/2048858/skin/images/menu.png");
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  grid-area: findArea_btn;
-  align-self: start;
-  justify-self: end;
+	width: 50px;
+	height: 50px;
+	left: 20px;
+	top: 10vh;
+	z-index: 1;
+	background-image:
+		url("http://s1.daumcdn.net/cfs.tistory/custom/blog/204/2048858/skin/images/menu.png");
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	grid-area: findArea_btn;
+	align-self: start;
+	justify-self: end;
 }
 
 .close {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  background-image: url("http://s1.daumcdn.net/cfs.tistory/custom/blog/204/2048858/skin/images/close.png");
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	background-image:
+		url("http://s1.daumcdn.net/cfs.tistory/custom/blog/204/2048858/skin/images/close.png");
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
 }
 
-#findArea_menu{   
-  width: 350px;
-  height: 100%;
-  position: fixed;
-  top: 0px;
-  left: -350px;
-  z-index:10;
-  border: 1px solid #c9c9c9;
-  background-color: white;
-  text-align: center;
-  font-weight: bold;
-  transition: All 0.2s ease;
-  -webkit-transition: All 0.2s ease;
-  -moz-transition: All 0.2s ease;
-  -o-transition: All 0.2s ease;
-  padding-top: 25vh;
-  padding-left: 0px;
+#findArea_menu {
+	width: 350px;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: -350px;
+	z-index: 10;
+	border: 1px solid #c9c9c9;
+	background-color: white;
+	text-align: center;
+	font-weight: bold;
+	transition: All 0.2s ease;
+	-webkit-transition: All 0.2s ease;
+	-moz-transition: All 0.2s ease;
+	-o-transition: All 0.2s ease;
+	padding-top: 25vh;
+	padding-left: 0px;
 }
 
-#findArea_menu a{
- padding:0;
- text-decoration: none;
- font-size: 18px;
- color: #25a4cd;
- display: block;
- transition: 0.3s;
- }
+#findArea_menu a {
+	padding: 0;
+	text-decoration: none;
+	font-size: 18px;
+	color: #25a4cd;
+	display: block;
+	transition: 0.3s;
+}
 
 #findArea_menu.open {
-  left: 0px;
+	left: 0px;
 }
 
 .page_cover.open {
-  display: block;
+	display: block;
 }
 
 .page_cover {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index:4;
-  display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 4;
+	display: none;
 }
-#findArea_menu p{
+
+#findArea_menu p {
 	font-size: 3rem;
 	padding-bottom: 2vh;
 	text-align: center;
 }
-#findArea_menu ul { 
-    width:300px; 
-    margin:0; 
-    padding:0;
-    }
-    
+
+#findArea_menu ul {
+	width: 300px;
+	margin: 0;
+	padding: 0;
+}
+
 #findArea_menu ul.findArea_hamburger li {
-    position:relative; 
-    float:left; 
-    width:100%; 
-    list-style-type:none; 
-    font-size:18px;
-    }
-    
+	position: relative;
+	float: left;
+	width: 100%;
+	list-style-type: none;
+	font-size: 18px;
+}
+
 #findArea_menu ul.findArea_hamburger li a {
-    display:block; 
-    width:100%; 
-    height:100%; 
-    line-height:50px; 
-    text-indent:20px;
-    text-align: center;
-    color:#25a4cd; 
-    font-weight:bold; 
-    text-decoration:none;
-    opacity: 0.5;
-    }
-    
+	display: block;
+	width: 100%;
+	height: 100%;
+	line-height: 50px;
+	text-indent: 20px;
+	text-align: center;
+	color: #25a4cd;
+	font-weight: bold;
+	text-decoration: none;
+	opacity: 0.5;
+}
+
 #findArea_menu ul.findArea_hamburger li a:hover {
-	opacity:1;
-    }
-    
+	opacity: 1;
+}
+
 #findArea_menu ul.findArea_hamburger li .sub_mobile a {
-    position:relative;
-    float:left;
-    display:block;
-    width:100%;
-    z-index:999;
-    background:#ccc;
-	}
+	position: relative;
+	float: left;
+	display: block;
+	width: 100%;
+	z-index: 999;
+	background: #ccc;
+}
 
 #findArea_menu ul.findArea_hamburger li .sub_mobile a:hover {
-    background:#787878;
-    color:#fff;
-    z-index:999;
-    }
+	background: #787878;
+	color: #fff;
+	z-index: 999;
+}
 /*햄버거메뉴 end*/
-.findArea_logo{
+.findArea_logo {
 	grid-area: findArea_logo;
 	align-self: center;
-	justify-self: center;
+	justify-self: end;
 	font-size: 5rem;
-	width:48vw;
-	display:grid;
+	width: 48vw;
+	display: grid;
 }
-.findArea_logo p{
-	justify-self: center;
+
+.findArea_logo p {
+	justify-self: end;
 }
-.findArea_logo p:hover{
-	cursor:pointer;
+
+.findArea_logo p:hover {
+	cursor: pointer;
 }
-.findArea_etcButton{
+
+.findArea_etcButton {
 	grid-area: findArea_etcButton;
 	align-self: center;
-	justify-self: center;
+	justify-self: end;
 }
-.findArea_etcButton ul{
-	width:13vw;
+
+.findArea_etcButton ul {
+	width: 13vw;
 }
+
 .findArea_etcButton ul.findArea_nav li {
-    position:relative; 
-    float:left; 
-    list-style-type:none; 
-    font-size:1.2rem;
-    }
-    
+	position: relative;
+	float: left;
+	list-style-type: none;
+	font-size: 1.2rem;
+}
+
 .findArea_etcButton ul.findArea_nav li a {
-    display:inline-block; 
-    width:100%; 
-    height:100%; 
-    line-height:50px; 
-    text-indent:20px;
-    text-align: center;
-    color:#25a4cd; 
-    font-weight:bold; 
-    text-decoration:none;
-    opacity: 0.5;
-    }
-    
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	line-height: 50px;
+	text-indent: 20px;
+	text-align: center;
+	color: #25a4cd;
+	font-weight: bold;
+	text-decoration: none;
+	opacity: 0.5;
+}
+
 .findArea_etcButton ul.findArea_nav li a:hover {
-	opacity:1;
-    }
-#searchPlace{
+	opacity: 1;
+}
+
+#searchPlace {
 	grid-area: searchPlace;
 	align-self: center;
-	justify-self: end;
+	justify-self: center;
 	font-size: 2rem;
 }
-#searchPlace .searchPlace{
+
+#searchPlace .searchPlace {
 	border-top: none;
 	border-right: none;
 	border-left: none;
-	border-bottom:1 solid #ccc;
+	border-bottom: 1 solid #ccc;
 	width: 40vw;
 }
-#searchPlace .searchPlace:focus{
+
+#searchPlace .searchPlace:focus {
 	outline: none;
 }
-#searchPlace .findArea_btn_image{
+
+#searchPlace .findArea_btn_image {
 	width: 3vw;
 	height: 5vh;
 	border: none;
 	background-color: white;
 }
-#searchPlace img{
+
+#searchPlace img {
 	width: 4vw;
 	height: 5vh;
 	opacity: 0.5;
 }
-#searchPlace img:hover{
+
+#searchPlace img:hover {
 	opacity: 1;
 }
 /* 분야메뉴 및 내용*/
-#findArea_List{
-	display:flex;
-	flex-direction:column;
-	width:80%;
-	margin:0 auto;
-	position:relative;
+#findArea_List {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
 }
-#findArea_menu2 {   
-  width: 20vw;
-  height: auto;
-  position: fixed;
-  font-weight: bold;
-  transition: All 0.2s ease;
-  -webkit-transition: All 0.2s ease;
-  -moz-transition: All 0.2s ease;
-  -o-transition: All 0.2s ease;
-  z-index:-1;
-  margin-top: 40vh;
+
+#findArea_menu2 {
+	width: 20vw;
+	height: auto;
+	position: fixed;
+	font-weight: bold;
+	transition: All 0.2s ease;
+	-webkit-transition: All 0.2s ease;
+	-moz-transition: All 0.2s ease;
+	-o-transition: All 0.2s ease;
+	z-index: -1;
+	margin-top: 40vh;
 }
-#findArea_List a{
- padding:0;
- text-decoration: none;
- font-size: 18px;
- color: #25a4cd;
- display: block;
- transition: 0.3s;
+
+#findArea_List a {
+	padding: 0;
+	text-decoration: none;
+	font-size: 18px;
+	color: #25a4cd;
+	display: block;
+	transition: 0.3s;
 }
+
 #findArea_List.open {
-  left: 0px;
+	left: 0px;
 }
-#findArea_List p{
+
+#findArea_List p {
 	font-size: 3rem;
 	padding-bottom: 2vh;
 	text-align: center;
 }
-#findArea_List ul { 
-    width:300px; 
-    margin:0; 
-    padding:0;
-}    
+
+#findArea_List ul {
+	width: 300px;
+	margin: 0;
+	padding: 0;
+}
+
 #findArea_List ul.findArea_hamburger li {
-    position:relative; 
-    float:left; 
-    width:100%; 
-    list-style-type:none; 
-    font-size:18px;
-} 
+	position: relative;
+	float: left;
+	width: 100%;
+	list-style-type: none;
+	font-size: 18px;
+}
+
 #findArea_List ul.findArea_hamburger li a {
-    display:block; 
-    line-height:11vh; 
-    color:#25a4cd; 
-    font-weight:bold; 
-    text-decoration:none;
-    opacity: 0.5;
-    padding-left: 8vw;
-}    
+	display: block;
+	line-height: 11vh;
+	color: #25a4cd;
+	font-weight: bold;
+	text-decoration: none;
+	opacity: 0.5;
+	padding-left: 6vw;
+}
+
 #findArea_List ul.findArea_hamburger li a:hover {
-	opacity:1;
-}    
+	opacity: 1;
+}
+
 #findArea_List ul.findArea_hamburger li .sub_mobile a {
-    position:relative;
-    float:left;
-    display:block;
-    width:100%;
-    background:#ccc;
+	position: relative;
+	float: left;
+	display: block;
+	width: 100%;
+	background: #ccc;
 }
+
 #findArea_List ul.findArea_hamburger li .sub_mobile a:hover {
-    background:#787878;
-    color:#fff;
-    z-index:0;
+	background: #787878;
+	color: #fff;
+	z-index: 0;
 }
-#findArea_List #findArea_content{
+
+#findArea_List #findArea_content {
 	width: 50vw;
-    height: auto;
-    z-index: -1;
-    position: absolute;
-    right: 110px;
-    top: 40vh;
+	height: auto;
+	z-index: -1;
+	position: absolute;
+	right: 110px;
+	top: 40vh;
 }
-#findArea_List #findArea_content p{
-	padding:1vw;
-	font-size:2.2rem;
-	background-color:#eee;
+
+#findArea_List #findArea_content p {
+	padding: 1vw;
+	font-size: 2.2rem;
+	background-color: #eee;
 }
-#findArea_List #findArea_content .findAreaDetail{
-	text-align:center;
-	padding:2.5vw;
-	padding-top:2vh;
-	padding-bottom:10vh;
+
+#findArea_List #findArea_content .findAreaDetail {
+	text-align: center;
+	padding: 2.5vw;
+	padding-top: 2vh;
+	padding-bottom: 10vh;
 }
-#findArea_List #findArea_content a{
-	display:inline-block;
-	padding-left:2vw;
+
+#findArea_List #findArea_content a {
+	display: inline-block;
+	padding-left: 2vw;
 }
-hr{
+
+hr {
 	align-items: center;
-	border:2px solid #aaa;
-	width:90%;
-	bottom:10vh;
+	border: 2px solid #aaa;
+	width: 90%;
+	bottom: 10vh;
 }
 /*footer*/
-footer{
-	width:80%;
-	text-align:center;
-	bottom:-80vh;
-	position:absolute;
+footer {
+	width: 80%;
+	text-align: center;
+	bottom: -80vh;
+	position: absolute;
 }
-hr{
+
+hr {
 	align-items: center;
-	border:2px solid #aaa;
-	width:90%;
+	border: 2px solid #aaa;
+	width: 90%;
 }
